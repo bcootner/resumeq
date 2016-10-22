@@ -23,7 +23,7 @@ class Resume {
         if let id = id?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
             let destination: DownloadRequest.DownloadFileDestination = { _, _ in
                 let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-                let fileURL = documentsURL.appendingPathComponent("resume.pdf")
+                let fileURL = documentsURL.appendingPathComponent("resume1.pdf")
                 return (fileURL, .removePreviousFile)
             }
             Alamofire.download("https://resumeq.herokuapp.com/resume/" + id + ".pdf", to: destination).response { response in
