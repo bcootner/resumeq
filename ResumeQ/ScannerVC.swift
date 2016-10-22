@@ -18,6 +18,8 @@ class ScannerVC: UIViewController {
     var scanPending = false
     var player : AVAudioPlayer?
     
+    @IBOutlet var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,6 +27,8 @@ class ScannerVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        scanPending = false
         
         //Instance of the AVCaptureDevice
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -111,6 +115,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
                 QRCodeFrameView?.frame = barCodeObject.bounds
                 if mdObject.stringValue != nil {
                     if scanPending == false {
+                        videoLayer?.isHidden = true 
                         scanPending = true
                         let newScan = Resume(qrId: mdObject.stringValue)
                         newScan.sendRequest(completion: { (success, output) in
@@ -119,11 +124,10 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
                                 print("error with alamorequest")
                             } else {
                                 if let output = output {
-                                    let webView = UIWebView(frame: self.view.frame)
+                                    self.webView.scalesPageToFit = true
                                     let request = URLRequest(url: output)
-                                    print(request)
-                                    webView.loadRequest(request)
-                                    self.view.addSubview(webView)
+                                    self.webView.loadRequest(request)
+                                    self.view.addSubview(self.webView)
                                 }
                             }
                         })

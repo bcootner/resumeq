@@ -1,5 +1,5 @@
 //
-//  companyCell.swift
+//  tagCell.swift
 //  ResumeQ
 //
 //  Created by Ben Cootner on 10/22/16.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-class companyCell: UITableViewCell {
-
-    @IBOutlet var logoView: UIImageView!
-    @IBOutlet var nameLabel: UILabel!
+class tagCell: UICollectionViewCell {
     
+    @IBOutlet var textLabel: UILabel!
 }
