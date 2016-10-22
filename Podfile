@@ -6,6 +6,7 @@ target 'ResumeQ' do
 
   # Pods for ResumeQ
   pod 'Alamofire'
+  pod 'Google/SignIn'
 
   target 'ResumeQTests' do
     inherit! :search_paths

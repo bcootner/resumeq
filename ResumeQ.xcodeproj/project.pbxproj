@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E073A321DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
+		3E073A331DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
+		3E073A341DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
+		3E073A381DBBFC0700FC17FC /* GoogleSigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E073A371DBBFC0700FC17FC /* GoogleSigninVC.swift */; };
 		7F0FCFF4AF56B103EC459AD2 /* Pods_ResumeQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8314FEC776868F8D53A7185 /* Pods_ResumeQTests.framework */; };
 		CAC085B73E986A5F6BE92876 /* Pods_ResumeQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */; };
 		D1F997FDEA1139DE98AD4519 /* Pods_ResumeQUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */; };
@@ -42,6 +46,9 @@
 /* Begin PBXFileReference section */
 		025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E073A361DBBF6E900FC17FC /* ResumeQ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ResumeQ-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E073A371DBBFC0700FC17FC /* GoogleSigninVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSigninVC.swift; sourceTree = "<group>"; };
 		6EC1CCC816F3C7D6067267D4 /* Pods-ResumeQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQTests/Pods-ResumeQTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B37957E883F4FB1E775814 /* Pods-ResumeQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQ/Pods-ResumeQ.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BFC3A2DD5B2F00F2BCEE29 /* Pods-ResumeQUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQUITests/Pods-ResumeQUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +152,7 @@
 			children = (
 				DC034EEE1DBB0D2200B1FA7E /* Resume.swift */,
 				DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */,
+				3E073A371DBBFC0700FC17FC /* GoogleSigninVC.swift */,
 				DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */,
 				DC62F7251DBAF5320020C4A3 /* SecondViewController.swift */,
 				DC62F7271DBAF5320020C4A3 /* Main.storyboard */,
@@ -152,6 +160,8 @@
 				DC62F72C1DBAF5320020C4A3 /* LaunchScreen.storyboard */,
 				DC62F72F1DBAF5320020C4A3 /* Info.plist */,
 				DC97DEAE1DBB3C2C0084C74C /* Ping.aiff */,
+				3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */,
+				3E073A361DBBF6E900FC17FC /* ResumeQ-Bridging-Header.h */,
 			);
 			path = ResumeQ;
 			sourceTree = "<group>";
@@ -227,6 +237,7 @@
 				DC62F73C1DBAF5320020C4A3 /* Frameworks */,
 				DC62F73D1DBAF5320020C4A3 /* Resources */,
 				7CC257AA80EE304E56B1436C /* [CP] Copy Pods Resources */,
+				72135DEEAFEBED69C6E5EAEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,7 +261,7 @@
 				TargetAttributes = {
 					DC62F71D1DBAF5310020C4A3 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 664AX44HR2;
+						DevelopmentTeam = 5ZL35CB8RG;
 						ProvisioningStyle = Automatic;
 					};
 					DC62F7331DBAF5320020C4A3 = {
@@ -292,6 +303,7 @@
 			files = (
 				DC62F72E1DBAF5320020C4A3 /* LaunchScreen.storyboard in Resources */,
 				DC62F72B1DBAF5320020C4A3 /* Assets.xcassets in Resources */,
+				3E073A321DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */,
 				DC62F7291DBAF5320020C4A3 /* Main.storyboard in Resources */,
 				DC97DEAF1DBB3C2C0084C74C /* Ping.aiff in Resources */,
 			);
@@ -301,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E073A331DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E073A341DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +373,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ResumeQ/Pods-ResumeQ-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		72135DEEAFEBED69C6E5EAEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ResumeQUITests/Pods-ResumeQUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7CC257AA80EE304E56B1436C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCC6681C15BBA3AABDB5CD6D /* [CP] Check Pods Manifest.lock */ = {
@@ -416,7 +445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BD7A5FC6787E46FE1B1E32EF /* [CP] Check Pods Manifest.lock */ = {
@@ -431,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -442,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC034EEF1DBB0D2200B1FA7E /* Resume.swift in Sources */,
+				3E073A381DBBFC0700FC17FC /* GoogleSigninVC.swift in Sources */,
 				DC62F7261DBAF5320020C4A3 /* SecondViewController.swift in Sources */,
 				DC62F7221DBAF5320020C4A3 /* AppDelegate.swift in Sources */,
 				DC62F7241DBAF5320020C4A3 /* ScannerVC.swift in Sources */,
@@ -517,6 +547,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -566,6 +597,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -594,15 +626,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2B37957E883F4FB1E775814 /* Pods-ResumeQ.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 664AX44HR2;
+				DEVELOPMENT_TEAM = 5ZL35CB8RG;
 				INFOPLIST_FILE = ResumeQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ResumeQ-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -611,13 +645,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B81AA8C4A866E0D2268C48DC /* Pods-ResumeQ.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 664AX44HR2;
+				DEVELOPMENT_TEAM = 5ZL35CB8RG;
 				INFOPLIST_FILE = ResumeQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ResumeQ-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
