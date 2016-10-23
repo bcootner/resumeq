@@ -141,7 +141,7 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
     }
  
     
-    func upload(data: Data, file: GTLDriveFile, mime: String, complete: (String) -> Void) {
+    func upload(data: Data, file: GTLDriveFile, mime: String, complete: @escaping (String) -> Void) {
         print("Mime: \(mime)")
     Alamofire.request("https://resumeq.herokuapp.com/resume_submit_json", method: .post, parameters: [:], encoding: data.base64EncodedString(), headers: [:]).responseString {
             response in
