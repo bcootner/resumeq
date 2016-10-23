@@ -36,6 +36,14 @@
 		DC23CA201DBC8E45000C8924 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23CA1F1DBC8E45000C8924 /* MainModel.swift */; };
 		DC5B4B631DBCD12C0071349B /* background.mov in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B621DBCD12C0071349B /* background.mov */; };
 		DC5B4B6A1DBCEC020071349B /* ubisoftlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B691DBCEC020071349B /* ubisoftlogo.jpg */; };
+		DC5B4B6C1DBCF9940071349B /* illlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B6B1DBCF9940071349B /* illlogo.png */; };
+		DC5B4B6E1DBCFDC70071349B /* googleimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B6D1DBCFDC70071349B /* googleimg.png */; };
+		DC5B4B701DBCFDDC0071349B /* capitalimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B6F1DBCFDDC0071349B /* capitalimg.png */; };
+		DC5B4B721DBCFDF90071349B /* gitimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B711DBCFDF90071349B /* gitimg.png */; };
+		DC5B4B741DBCFE1F0071349B /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B731DBCFE1F0071349B /* apple.png */; };
+		DC5B4B761DBCFE440071349B /* namec.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B751DBCFE440071349B /* namec.png */; };
+		DC5B4B781DBCFE5E0071349B /* zyp.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B771DBCFE5E0071349B /* zyp.png */; };
+		DC5B4B7A1DBCFE7E0071349B /* raytheon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B791DBCFE7E0071349B /* raytheon.png */; };
 		DC5CFA431DBCA1B90068A7F4 /* ExplainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */; };
 		DC5CFA451DBCA51A0068A7F4 /* SF-UI-Text in Resources */ = {isa = PBXBuildFile; fileRef = DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */; };
 		DC5CFA471DBCA6A60068A7F4 /* DriveNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */; };
@@ -107,6 +115,14 @@
 		DC23CA1F1DBC8E45000C8924 /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		DC5B4B621DBCD12C0071349B /* background.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = background.mov; sourceTree = "<group>"; };
 		DC5B4B691DBCEC020071349B /* ubisoftlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ubisoftlogo.jpg; sourceTree = "<group>"; };
+		DC5B4B6B1DBCF9940071349B /* illlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illlogo.png; sourceTree = "<group>"; };
+		DC5B4B6D1DBCFDC70071349B /* googleimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleimg.png; sourceTree = "<group>"; };
+		DC5B4B6F1DBCFDDC0071349B /* capitalimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capitalimg.png; sourceTree = "<group>"; };
+		DC5B4B711DBCFDF90071349B /* gitimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitimg.png; sourceTree = "<group>"; };
+		DC5B4B731DBCFE1F0071349B /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		DC5B4B751DBCFE440071349B /* namec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = namec.png; sourceTree = "<group>"; };
+		DC5B4B771DBCFE5E0071349B /* zyp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zyp.png; sourceTree = "<group>"; };
+		DC5B4B791DBCFE7E0071349B /* raytheon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raytheon.png; sourceTree = "<group>"; };
 		DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainerVC.swift; sourceTree = "<group>"; };
 		DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-UI-Text"; sourceTree = "<group>"; };
 		DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriveNVC.swift; sourceTree = "<group>"; };
@@ -215,7 +231,15 @@
 		DC5B4B641DBCD79A0071349B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DC5B4B6B1DBCF9940071349B /* illlogo.png */,
+				DC5B4B6D1DBCFDC70071349B /* googleimg.png */,
+				DC5B4B791DBCFE7E0071349B /* raytheon.png */,
 				DC1E17A51DBCC0270026FE4E /* gdriveupload.png */,
+				DC5B4B751DBCFE440071349B /* namec.png */,
+				DC5B4B771DBCFE5E0071349B /* zyp.png */,
+				DC5B4B711DBCFDF90071349B /* gitimg.png */,
+				DC5B4B731DBCFE1F0071349B /* apple.png */,
+				DC5B4B6F1DBCFDDC0071349B /* capitalimg.png */,
 				DC1E17A11DBCBE440026FE4E /* company.png */,
 				DC5B4B621DBCD12C0071349B /* background.mov */,
 				DC1E17A21DBCBE440026FE4E /* resume.png */,
@@ -393,7 +417,7 @@
 				TargetAttributes = {
 					DC62F71D1DBAF5310020C4A3 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5ZL35CB8RG;
+						DevelopmentTeam = 664AX44HR2;
 						ProvisioningStyle = Automatic;
 					};
 					DC62F7331DBAF5320020C4A3 = {
@@ -441,10 +465,14 @@
 				3E8A326C1DBC025200BB324C /* GoogleService-Info.plist in Resources */,
 				DC1E17881DBCB2740026FE4E /* jpgimg.png in Resources */,
 				DC1E17A41DBCBE440026FE4E /* resume.png in Resources */,
+				DC5B4B6C1DBCF9940071349B /* illlogo.png in Resources */,
+				DC5B4B781DBCFE5E0071349B /* zyp.png in Resources */,
 				DC1E17851DBCB2740026FE4E /* pptimg.png in Resources */,
+				DC5B4B741DBCFE1F0071349B /* apple.png in Resources */,
 				DC1E178C1DBCB8280026FE4E /* movimg.png in Resources */,
 				DC62F72E1DBAF5320020C4A3 /* LaunchScreen.storyboard in Resources */,
 				DC5CFA451DBCA51A0068A7F4 /* SF-UI-Text in Resources */,
+				DC5B4B7A1DBCFE7E0071349B /* raytheon.png in Resources */,
 				DC1E17831DBCB2740026FE4E /* xlsximg.png in Resources */,
 				DC1E17871DBCB2740026FE4E /* pdfimg.png in Resources */,
 				DC1E17841DBCB2740026FE4E /* docximg.png in Resources */,
@@ -452,6 +480,10 @@
 				DC62F72B1DBAF5320020C4A3 /* Assets.xcassets in Resources */,
 				DC5B4B6A1DBCEC020071349B /* ubisoftlogo.jpg in Resources */,
 				DC62F7291DBAF5320020C4A3 /* Main.storyboard in Resources */,
+				DC5B4B761DBCFE440071349B /* namec.png in Resources */,
+				DC5B4B721DBCFDF90071349B /* gitimg.png in Resources */,
+				DC5B4B701DBCFDDC0071349B /* capitalimg.png in Resources */,
+				DC5B4B6E1DBCFDC70071349B /* googleimg.png in Resources */,
 				DC97DEC01DBB7BBB0084C74C /* AmazonLogo.png in Resources */,
 				DC1E17A61DBCC0270026FE4E /* gdriveupload.png in Resources */,
 				DC97DEAF1DBB3C2C0084C74C /* Ping.aiff in Resources */,
@@ -792,7 +824,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5ZL35CB8RG;
+				DEVELOPMENT_TEAM = 664AX44HR2;
 				INFOPLIST_FILE = ResumeQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeQ;
@@ -811,7 +843,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5ZL35CB8RG;
+				DEVELOPMENT_TEAM = 664AX44HR2;
 				INFOPLIST_FILE = ResumeQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeQ;

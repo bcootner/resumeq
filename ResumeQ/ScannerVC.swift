@@ -12,6 +12,8 @@ import AudioToolbox
 
 class ScannerVC: UIViewController {
 
+    @IBOutlet var saveButton: UIButton!
+    
     var captureSession:AVCaptureSession?
     var videoLayer: AVCaptureVideoPreviewLayer?
     var QRCodeFrameView: UIView?
@@ -29,6 +31,8 @@ class ScannerVC: UIViewController {
         super.viewWillAppear(animated)
         
         scanPending = false
+        
+        saveButton.isHidden = true
         
         //Instance of the AVCaptureDevice
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -96,6 +100,23 @@ class ScannerVC: UIViewController {
             }
         }
     }
+    @IBAction func saveClicked(_ sender: AnyObject) {
+        //Save button
+        self.videoLayer?.isHidden = false
+        self.webView.isHidden = true
+        self.saveButton.isHidden = true
+        scanPending = false
+        
+        let layer = UIApplication.shared.keyWindow!.layer
+        let scale = UIScreen.main.scale
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+        
+        layer.render(in: UIGraphicsGetCurrentContext()!)
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        UIImageWriteToSavedPhotosAlbum(screenshot!, nil, nil, nil)
+    }
 }
 
 //MARK: ACaptrueMetadata Delegate function for recognizing QR Code
@@ -115,7 +136,6 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
                 QRCodeFrameView?.frame = barCodeObject.bounds
                 if mdObject.stringValue != nil {
                     if scanPending == false {
-                        videoLayer?.isHidden = true 
                         scanPending = true
                         let newScan = Resume(qrId: mdObject.stringValue)
                         newScan.sendRequest(completion: { (success, output) in
@@ -124,6 +144,8 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
                                 print("error with alamorequest")
                             } else {
                                 if let output = output {
+                                    self.videoLayer?.isHidden = true
+                                    self.saveButton.isHidden = false
                                     self.webView.scalesPageToFit = true
                                     let request = URLRequest(url: output)
                                     self.webView.loadRequest(request)

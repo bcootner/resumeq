@@ -34,23 +34,40 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGj-ae-KMb">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgR-G3-kBq">
+                                <color key="backgroundColor" red="0.96222537760000004" green="0.74501425030000001" blue="0.32881119850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jdI-ci-0gF"/>
+                                    <constraint firstAttribute="width" constant="100" id="qCk-hK-PFF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveClicked:" destination="9pv-A4-QxB" eventType="touchUpInside" id="hIe-QB-sfg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WGj-ae-KMb" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="E4P-WZ-gLT"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="WGj-ae-KMb" secondAttribute="bottom" id="Efy-hC-gfM"/>
+                            <constraint firstItem="lgR-G3-kBq" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="XGx-h0-PSS"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="lgR-G3-kBq" secondAttribute="bottom" constant="8" id="c4x-dZ-2mg"/>
                             <constraint firstItem="WGj-ae-KMb" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="loV-Dn-DE9"/>
                             <constraint firstAttribute="trailing" secondItem="WGj-ae-KMb" secondAttribute="trailing" id="zR7-8w-syk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Scan" image="imgres.png" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="saveButton" destination="lgR-G3-kBq" id="Rld-nK-UDf"/>
                         <outlet property="webView" destination="WGj-ae-KMb" id="rbi-2X-FbO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="1578"/>
+            <point key="canvasLocation" x="596" y="1577.3613193403301"/>
         </scene>
         <!--Companies-->
         <scene sceneID="wg7-f3-ORb">
@@ -71,7 +88,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dxq-sW-8GB" id="g0Y-rJ-Ofq">
-                                            <frame key="frameInset" width="375" height="75"/>
+                                            <frame key="frameInset" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Nab-sP-8W8">
@@ -342,10 +359,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="drivecell" rowHeight="55" id="uEJ-Ae-iGn" customClass="DriveCell" customModule="ResumeQ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="1000" height="55"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uEJ-Ae-iGn" id="nEc-9w-o1U">
-                                            <frame key="frameInset" width="375" height="55"/>
+                                            <frame key="frameInset" width="375" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIS-9f-Kl2">
