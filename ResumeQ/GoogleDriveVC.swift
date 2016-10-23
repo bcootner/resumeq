@@ -101,17 +101,18 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
        return cell
     }
     
-    func upload(data: Data, file: GTLDriveFile, complete: (Void) -> Void) {
+    func upload(data: Data, file: GTLDriveFile, mime: String, complete: (Void) -> Void) {
+        print("Mime: \(mime)")
         Alamofire.upload(
             multipartFormData: { multipartFormData in
-                multipartFormData.append(data, withName: "resume")
+                multipartFormData.append(data, withName: "resume", mimeType: mime)
             },
-            to: "https://resumeq.herokuapp.com/resume_submit",
+            to: "https://resumeq.herokuapp.com/resume_submit_mobile",
             encodingCompletion: { encodingResult in
                 switch encodingResult {
                 case .success(let upload, _, _):
-                    upload.responseJSON { response in
-                        debugPrint(response)
+                    upload.response{ response in
+                        print(response)
                     }
                 case .failure(let encodingError):
                     print(encodingError)
@@ -129,12 +130,14 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
             //Upload file to server, generate id and create QR code
             if let model = self.googleModel {
                 model.getFileContents(file: file, completion: {
-                    data in
-                    // Upload the data in a blob
+                    data, mime in
                     print("\(data)")
-                    let resumeId = "aksbdkajsbdkabjsa"
-                    UserDefaults.standard.set(resumeId, forKey: "ResumeString")
-                    UserDefaults.standard.synchronize()
+                    // Upload the data in a blob
+                    self.upload(data: data, file: file, mime: mime, complete: {
+                        let resumeId = "aksbdkajsbdkabjsa"
+                        UserDefaults.standard.set(resumeId, forKey: "ResumeString")
+                        UserDefaults.standard.synchronize()
+                    })
                 })
             }
         }))
