@@ -47,14 +47,14 @@ class GoogleDriveVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let resumeString = UserDefaults.standard.object(forKey: "ResumeString") as? String {
-            self.navigationController?.title = "Résumé"
+            self.navigationController?.navigationBar.topItem?.title = "Résumé"
             // Set QrView
             let qr = QRCode(resumeString)
             qrView.image = qr?.image
             tableView.isHidden = true
             qrView.isHidden = false
         }  else {
-            self.navigationController?.title = "Google Drive"
+            self.navigationController?.navigationBar.topItem?.title = "Google Drive"
             tableView.isHidden = false
             qrView.isHidden = true
         }
@@ -141,7 +141,7 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
     }
  
     
-    func upload(data: Data, file: GTLDriveFile, mime: String, complete: (String) -> Void) {
+    func upload(data: Data, file: GTLDriveFile, mime: String, complete: @escaping (String) -> Void) {
         print("Mime: \(mime)")
     Alamofire.request("https://resumeq.herokuapp.com/resume_submit_json", method: .post, parameters: [:], encoding: data.base64EncodedString(), headers: [:]).responseString {
             response in
@@ -183,6 +183,7 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
                         let resumeId = id
                         UserDefaults.standard.set(resumeId, forKey: "ResumeString")
                         UserDefaults.standard.synchronize()
+                        self.viewWillAppear(true)
                     })
                 })
             }

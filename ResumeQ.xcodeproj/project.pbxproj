@@ -34,6 +34,7 @@
 		DC23CA1E1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */; };
 		DC23CA201DBC8E45000C8924 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23CA1F1DBC8E45000C8924 /* MainModel.swift */; };
 		DC5B4B631DBCD12C0071349B /* background.mov in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B621DBCD12C0071349B /* background.mov */; };
+		DC5B4B6A1DBCEC020071349B /* ubisoftlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B691DBCEC020071349B /* ubisoftlogo.jpg */; };
 		DC5CFA431DBCA1B90068A7F4 /* ExplainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */; };
 		DC5CFA451DBCA51A0068A7F4 /* SF-UI-Text in Resources */ = {isa = PBXBuildFile; fileRef = DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */; };
 		DC5CFA471DBCA6A60068A7F4 /* DriveNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */; };
@@ -47,7 +48,6 @@
 		DC62F7441DBAF5320020C4A3 /* ResumeQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7431DBAF5320020C4A3 /* ResumeQUITests.swift */; };
 		DC97DEAF1DBB3C2C0084C74C /* Ping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = DC97DEAE1DBB3C2C0084C74C /* Ping.aiff */; };
 		DC97DEB41DBB79D30084C74C /* companyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97DEB31DBB79D30084C74C /* companyCell.swift */; };
-		DC97DEBE1DBB7BBB0084C74C /* ubisoftLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC97DEB81DBB7BBB0084C74C /* ubisoftLogo.jpg */; };
 		DC97DEBF1DBB7BBB0084C74C /* microsoftLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */; };
 		DC97DEC01DBB7BBB0084C74C /* AmazonLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */; };
 		DC97DEC21DBB8AA60084C74C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97DEC11DBB8AA60084C74C /* Company.swift */; };
@@ -104,6 +104,7 @@
 		DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTLDriveFile+searchableString.swift"; sourceTree = "<group>"; };
 		DC23CA1F1DBC8E45000C8924 /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		DC5B4B621DBCD12C0071349B /* background.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = background.mov; sourceTree = "<group>"; };
+		DC5B4B691DBCEC020071349B /* ubisoftlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ubisoftlogo.jpg; sourceTree = "<group>"; };
 		DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainerVC.swift; sourceTree = "<group>"; };
 		DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-UI-Text"; sourceTree = "<group>"; };
 		DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriveNVC.swift; sourceTree = "<group>"; };
@@ -123,7 +124,6 @@
 		DC62F7451DBAF5320020C4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC97DEAE1DBB3C2C0084C74C /* Ping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Ping.aiff; sourceTree = "<group>"; };
 		DC97DEB31DBB79D30084C74C /* companyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = companyCell.swift; sourceTree = "<group>"; };
-		DC97DEB81DBB7BBB0084C74C /* ubisoftLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ubisoftLogo.jpg; sourceTree = "<group>"; };
 		DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = microsoftLogo.jpg; sourceTree = "<group>"; };
 		DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmazonLogo.png; sourceTree = "<group>"; };
 		DC97DEC11DBB8AA60084C74C /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -217,8 +217,8 @@
 				DC1E17A11DBCBE440026FE4E /* company.png */,
 				DC5B4B621DBCD12C0071349B /* background.mov */,
 				DC1E17A21DBCBE440026FE4E /* resume.png */,
+				DC5B4B691DBCEC020071349B /* ubisoftlogo.jpg */,
 				DC97DEAE1DBB3C2C0084C74C /* Ping.aiff */,
-				DC97DEB81DBB7BBB0084C74C /* ubisoftLogo.jpg */,
 				DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */,
 				DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */,
 				DC1E177D1DBCB2740026FE4E /* xlsximg.png */,
@@ -446,7 +446,7 @@
 				DC1E17841DBCB2740026FE4E /* docximg.png in Resources */,
 				DC1E178A1DBCB6650026FE4E /* folderimg.png in Resources */,
 				DC62F72B1DBAF5320020C4A3 /* Assets.xcassets in Resources */,
-				DC97DEBE1DBB7BBB0084C74C /* ubisoftLogo.jpg in Resources */,
+				DC5B4B6A1DBCEC020071349B /* ubisoftlogo.jpg in Resources */,
 				DC62F7291DBAF5320020C4A3 /* Main.storyboard in Resources */,
 				DC97DEC01DBB7BBB0084C74C /* AmazonLogo.png in Resources */,
 				DC1E17A61DBCC0270026FE4E /* gdriveupload.png in Resources */,

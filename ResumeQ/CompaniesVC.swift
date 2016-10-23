@@ -13,6 +13,7 @@ class CompaniesVC: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     
+    var selectedCompany = Company()
     var searchedItems = [Company]()
     var allItems = [Company]()
     override func viewDidLoad() {
@@ -28,8 +29,8 @@ class CompaniesVC: UIViewController {
         
         //Company.addCompany(name: "Microsoft", description: "", link: "www.microsoft.com/apply", tags: ["C# Coder", "Andriod","Backend"])
         
-        Company.getCompanies()
-
+        //Company.getCompanies()
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +43,15 @@ class CompaniesVC: UIViewController {
     }
 
     func loadData() {
-        
+        Company.getDemoCompanies { (success, companies) in
+            self.tableView.refreshControl?.endRefreshing()
+            if success {
+                allItems = companies
+                searchedItems = allItems
+                tableView.reloadData()
+            }
+        }
+
     }
 }
 
@@ -51,42 +60,27 @@ class CompaniesVC: UIViewController {
 extension CompaniesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return searchedItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! companyCell
-        if indexPath.row == 0 {
-            cell.logoView.image = UIImage(named: "microsoftLogo.jpg")
-            cell.nameLabel.text = "Microsoft"
-            return cell
-            
-        } else if indexPath.row == 1 {
-            cell.logoView.image = UIImage(named: "AmazonLogo.png")
-            cell.nameLabel.text = "Amazon"
-            return cell
-        } else  {
-            cell.logoView.image = UIImage(named: "ubisoftLogo.jpg")
-            cell.nameLabel.text = "Ubisoft"
-            return cell
-        }
-    
+        cell.logoView.image = searchedItems[indexPath.row].logo
+        cell.nameLabel.text = searchedItems[indexPath.row].name
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        selectedCompany = searchedItems[indexPath.row]
         self.performSegue(withIdentifier: "moreDetail", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if  segue.identifier == "moreDetail" {
             if let destination_VC = segue.destination as? MoreDetailVC {
-            let testComp = Company()
-            testComp.name = "Microsoft"
-            testComp.logo = UIImage(named: "microsoftLogo.jpg")
-            testComp.description = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
-            testComp.tags = ["Full Stack Engineer", "iOS Dev", "Andriod Dev", "PR Manager"]
-            destination_VC.company = testComp
+            destination_VC.company = selectedCompany
             }
         }
     }

@@ -18,10 +18,13 @@ class MoreDetailVC: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     
+    @IBOutlet var linkButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = company?.logo
         descriptionView.text = company?.description
+        linkButton.setTitle(company?.link, for: .normal)
         self.automaticallyAdjustsScrollViewInsets = false
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -49,7 +52,11 @@ class MoreDetailVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    @IBAction func linkClicked(_ sender: AnyObject) {
+        if let url = URL(string: company?.link ?? "") {
+            UIApplication.shared.open(url, options: [:])
+        }    }
 }
 
 //MARK Collection View 

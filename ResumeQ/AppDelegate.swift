@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if isStudent {
                 let initalVC: UITabBarController = mainStorybard.instantiateViewController(withIdentifier: "StudentScreen") as! UITabBarController
+                initalVC.tabBar.tintColor = UIColor(colorLiteralRed: 0.82, green: 0.39, blue: 0.35, alpha: 1.0) 
                 self.window = UIWindow(frame: UIScreen.main.bounds)
                 self.window?.rootViewController = initalVC
                 self.window?.makeKeyAndVisible()

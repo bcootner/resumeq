@@ -218,6 +218,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="http://www.microsoft.com/apply"/>
+                                <connections>
+                                    <action selector="linkClicked:" destination="H2D-kf-HPP" eventType="touchUpInside" id="yaT-dL-IdF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -244,6 +247,7 @@
                         <outlet property="collectionView" destination="Tw0-pZ-VAg" id="9lt-zB-JZU"/>
                         <outlet property="descriptionView" destination="sP5-Dh-uf4" id="c40-CW-BEb"/>
                         <outlet property="imageView" destination="KX2-6l-2Gb" id="CBC-fF-3H2"/>
+                        <outlet property="linkButton" destination="B8C-Ne-vG1" id="1yz-PM-Uag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AW-em-yBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
