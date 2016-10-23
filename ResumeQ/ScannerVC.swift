@@ -102,8 +102,6 @@ class ScannerVC: UIViewController {
     }
     @IBAction func saveClicked(_ sender: AnyObject) {
         //Save button
-        self.videoLayer?.isHidden = false
-        self.webView.isHidden = true
         self.saveButton.isHidden = true
         scanPending = false
         
@@ -116,6 +114,9 @@ class ScannerVC: UIViewController {
         UIGraphicsEndImageContext()
         
         UIImageWriteToSavedPhotosAlbum(screenshot!, nil, nil, nil)
+        
+        self.videoLayer?.isHidden = false
+        self.webView.isHidden = true
     }
 }
 
@@ -150,6 +151,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
                                     let request = URLRequest(url: output)
                                     self.webView.loadRequest(request)
                                     self.view.addSubview(self.webView)
+                                    self.view.bringSubview(toFront: self.saveButton)
                                 }
                             }
                         })
