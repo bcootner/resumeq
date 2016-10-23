@@ -26,12 +26,10 @@ class GoogleDriveVC: UIViewController {
         searchBar.delegate = self
        
         tableView.refreshControl = UIRefreshControl()
-        tableView.refreshControl?.tintColor = UIColor.gray
         tableView.refreshControl?.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)
-        
+        tableView.refreshControl?.tintColor = UIColor.gray
+        tableView.refreshControl?.beginRefreshing()
         loadData()
-        
-        
     }
 
     override func viewWillLayoutSubviews() {
@@ -104,7 +102,7 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let alert = UIAlertController(title: "Upload \()", message: "Are you sure you want to upload this file?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Upload \(searchedFiles[indexPath.row].name ?? "")?", message: "Are you sure you want to upload this file?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
             //Upload file to server, generate id and create QR code
