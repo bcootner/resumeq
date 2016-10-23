@@ -16,7 +16,6 @@ class Company {
      var description: String?
      var tags: [String]?
     
-    
     func searchableStrings() -> [String] {
         return tags ?? [String]() + [name ?? "", description ?? ""]
     }

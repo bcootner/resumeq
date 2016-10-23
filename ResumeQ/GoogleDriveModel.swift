@@ -37,8 +37,17 @@ class GoogleDriveModel: NSObject {
         )
     }
     
-    func getFileContents() {
-        
+    func getFileContents(file: GTLDriveFile, completion: @escaping (Data) -> Void) {
+        let url = "https://www.googleapis.com/drive/v3/files/\(file.identifier)?alt=media"
+        let fetcher = service.fetcherService.fetcher(withURLString: url)
+        fetcher.beginFetch(completionHandler: {
+            data, error in
+            if (error == nil) {
+                completion(data!)
+            } else {
+                print("error\(error)")
+            }
+        })
     }
     
     @objc func fetch(ticket: GTLServiceTicket,
