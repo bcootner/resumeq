@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dxq-sW-8GB" id="g0Y-rJ-Ofq">
-                                            <frame key="frameInset" width="375" height="74"/>
+                                            <frame key="frameInset" width="375" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Nab-sP-8W8">
@@ -342,10 +342,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="drivecell" rowHeight="55" id="uEJ-Ae-iGn" customClass="DriveCell" customModule="ResumeQ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="55"/>
+                                        <rect key="frame" x="0.0" y="92" width="1000" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uEJ-Ae-iGn" id="nEc-9w-o1U">
-                                            <frame key="frameInset" width="375" height="54"/>
+                                            <frame key="frameInset" width="375" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIS-9f-Kl2">
@@ -386,7 +386,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Z1K-d8-UVs" secondAttribute="trailing" constant="44" id="MZn-PT-4En"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Z1K-d8-UVs" secondAttribute="leading" constant="-44" id="RQG-MF-MG0"/>
-                            <constraint firstItem="Z1K-d8-UVs" firstAttribute="top" secondItem="rTX-lr-J2S" secondAttribute="bottom" constant="38" id="cJ8-UK-8hL"/>
+                            <constraint firstItem="Z1K-d8-UVs" firstAttribute="top" secondItem="rTX-lr-J2S" secondAttribute="bottom" constant="76" id="cJ8-UK-8hL"/>
                             <constraint firstItem="0Xj-sO-Y8p" firstAttribute="top" secondItem="rTX-lr-J2S" secondAttribute="bottom" constant="-16" id="eLV-3C-Q0a"/>
                             <constraint firstAttribute="trailing" secondItem="0Xj-sO-Y8p" secondAttribute="trailing" id="eW7-vS-7K1"/>
                             <constraint firstItem="0Xj-sO-Y8p" firstAttribute="bottom" secondItem="cMG-98-NtP" secondAttribute="top" id="f0e-gF-EcC"/>
