@@ -11,6 +11,6 @@ import GoogleAPIClient
 
 extension GTLDriveFile {
     func searchableStrings() -> [String]{
-        return [self.name]
+        return [self.name + self.mimeType]
     }
 }

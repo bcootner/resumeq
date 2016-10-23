@@ -1,42 +1,11 @@
 PODS:
   - Alamofire (4.0.1)
   - AsyncImageView (1.6)
-  - FirebaseAnalytics (3.4.4):
-    - FirebaseCore (~> 3.4)
-    - FirebaseInstanceID (~> 1.0)
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
-  - FirebaseCore (3.4.3):
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleUtilities (~> 1.2)
-  - FirebaseInstanceID (1.0.8)
-  - Google/Core (3.0.3):
-    - FirebaseAnalytics (~> 3.2)
-  - Google/SignIn (3.0.3):
-    - Google/Core
-    - GoogleSignIn (~> 4.0)
   - GoogleAPIClient/Core (1.0.5):
     - GTMSessionFetcher (~> 1.1)
   - GoogleAPIClient/Drive (1.0.5):
     - GoogleAPIClient/Core
     - GTMSessionFetcher (~> 1.1)
-  - GoogleAppUtilities (1.1.2):
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleAuthUtilities (2.0.2):
-    - GoogleNetworkingUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleInterchangeUtilities (1.2.2):
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleNetworkingUtilities (1.2.2):
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleSignIn (4.0.0):
-    - GoogleAppUtilities (~> 1.1)
-    - GoogleAuthUtilities (~> 2.0)
-    - GoogleNetworkingUtilities (~> 1.2)
-    - GoogleUtilities (~> 1.3)
-  - GoogleSymbolUtilities (1.1.2)
-  - GoogleUtilities (1.3.2):
-    - GoogleSymbolUtilities (~> 1.1)
   - GTMOAuth2 (1.1.3):
     - GTMSessionFetcher (~> 1.1)
   - GTMSessionFetcher (1.1.6):
@@ -51,13 +20,15 @@ PODS:
     - SVPullToRefresh
   - QRCode (1.0)
   - SVPullToRefresh (0.4.1)
+  - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire
-  - Google/SignIn
   - GoogleAPIClient/Drive (~> 1.0.2)
+  - GTMOAuth2 (~> 1.1.0)
   - HSGoogleDrivePicker (~> 1.0)
   - QRCode (from `https://github.com/aschuch/QRCode.git`)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   QRCode:
@@ -71,24 +42,14 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AsyncImageView: 416e99402e5b1f20571de70ad619ced90f56a7d9
-  FirebaseAnalytics: 0533a00b681e08fd0b2cd0444b7ddf0ef9fd7a1a
-  FirebaseCore: 5a885548bbc5f0c410b04f8e9ac9d73ff1221907
-  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
-  Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
   GoogleAPIClient: 4a6b0b807de8b1115a2835180b25dd93dc60f1ea
-  GoogleAppUtilities: a8a552aa74f6597f805e45b5a3962766c3134973
-  GoogleAuthUtilities: ccad2e0a9284699973ff57c0dd24c3893657fda4
-  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
-  GoogleNetworkingUtilities: 3edd3a8161347494f2da60ea0deddc8a472d94cb
-  GoogleSignIn: 09036ed61f8e75f1424100d63f7719480b2428c3
-  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
-  GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   GTMOAuth2: 72f8a58b1ad821cc06638b6099a522789fe04fcc
   GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
   HSGoogleDrivePicker: c7a434caa262d5c012f0a39004e71f3666978cfb
   QRCode: 0d9f7e3f9de835689a7690aeaa20baa75090ba6c
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: 87f35693facbd26049c4e167db37e6deebf767cb
+PODFILE CHECKSUM: a4e6e6d493e726287c630bb7e7a207be5d50c1fe
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.0.1

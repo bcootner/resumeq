@@ -13,13 +13,30 @@
 		3E75CED21DBC45400025B50A /* driveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED11DBC45400025B50A /* driveCell.swift */; };
 		3E75CED41DBC46520025B50A /* GoogleDriveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */; };
 		3E75CED61DBC49140025B50A /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED51DBC49140025B50A /* GoogleAuth.swift */; };
-		3E8A326B1DBC025200BB324C /* MyQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A32691DBC025200BB324C /* MyQRCodeController.swift */; };
 		3E8A326C1DBC025200BB324C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */; };
 		7F0FCFF4AF56B103EC459AD2 /* Pods_ResumeQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8314FEC776868F8D53A7185 /* Pods_ResumeQTests.framework */; };
 		CAC085B73E986A5F6BE92876 /* Pods_ResumeQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */; };
 		D1F997FDEA1139DE98AD4519 /* Pods_ResumeQUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */; };
 		DC034EEF1DBB0D2200B1FA7E /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC034EEE1DBB0D2200B1FA7E /* Resume.swift */; };
+		DC1E17831DBCB2740026FE4E /* xlsximg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E177D1DBCB2740026FE4E /* xlsximg.png */; };
+		DC1E17841DBCB2740026FE4E /* docximg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E177E1DBCB2740026FE4E /* docximg.png */; };
+		DC1E17851DBCB2740026FE4E /* pptimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E177F1DBCB2740026FE4E /* pptimg.png */; };
+		DC1E17861DBCB2740026FE4E /* imgimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17801DBCB2740026FE4E /* imgimg.png */; };
+		DC1E17871DBCB2740026FE4E /* pdfimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17811DBCB2740026FE4E /* pdfimg.png */; };
+		DC1E17881DBCB2740026FE4E /* jpgimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17821DBCB2740026FE4E /* jpgimg.png */; };
+		DC1E178A1DBCB6650026FE4E /* folderimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17891DBCB6650026FE4E /* folderimg.png */; };
+		DC1E178C1DBCB8280026FE4E /* movimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E178B1DBCB8280026FE4E /* movimg.png */; };
+		DC1E178E1DBCBABD0026FE4E /* CompaniesNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1E178D1DBCBABD0026FE4E /* CompaniesNVC.swift */; };
+		DC1E17A31DBCBE440026FE4E /* company.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17A11DBCBE440026FE4E /* company.png */; };
+		DC1E17A41DBCBE440026FE4E /* resume.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17A21DBCBE440026FE4E /* resume.png */; };
+		DC1E17A61DBCC0270026FE4E /* gdriveupload.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17A51DBCC0270026FE4E /* gdriveupload.png */; };
+		DC1E17AA1DBCC9D40026FE4E /* imgres.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1E17A91DBCC9D40026FE4E /* imgres.png */; };
 		DC23CA1E1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */; };
+		DC23CA201DBC8E45000C8924 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23CA1F1DBC8E45000C8924 /* MainModel.swift */; };
+		DC5B4B631DBCD12C0071349B /* background.mov in Resources */ = {isa = PBXBuildFile; fileRef = DC5B4B621DBCD12C0071349B /* background.mov */; };
+		DC5CFA431DBCA1B90068A7F4 /* ExplainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */; };
+		DC5CFA451DBCA51A0068A7F4 /* SF-UI-Text in Resources */ = {isa = PBXBuildFile; fileRef = DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */; };
+		DC5CFA471DBCA6A60068A7F4 /* DriveNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */; };
 		DC62F7221DBAF5320020C4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */; };
 		DC62F7241DBAF5320020C4A3 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */; };
 		DC62F7261DBAF5320020C4A3 /* CompaniesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7251DBAF5320020C4A3 /* CompaniesVC.swift */; };
@@ -34,8 +51,9 @@
 		DC97DEBF1DBB7BBB0084C74C /* microsoftLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */; };
 		DC97DEC01DBB7BBB0084C74C /* AmazonLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */; };
 		DC97DEC21DBB8AA60084C74C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97DEC11DBB8AA60084C74C /* Company.swift */; };
-		DC97DEC41DBB8B140084C74C /* moreDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97DEC31DBB8B140084C74C /* moreDetailVC.swift */; };
+		DC97DEC41DBB8B140084C74C /* MoreDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97DEC31DBB8B140084C74C /* MoreDetailVC.swift */; };
 		DC97DEC61DBBB89D0084C74C /* tagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97DEC51DBBB89D0084C74C /* tagCell.swift */; };
+		DCE765FE1DBC9360005C5720 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE765FD1DBC9360005C5720 /* SplashScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +81,6 @@
 		3E75CED11DBC45400025B50A /* driveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = driveCell.swift; sourceTree = "<group>"; };
 		3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveVC.swift; sourceTree = "<group>"; };
 		3E75CED51DBC49140025B50A /* GoogleAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
-		3E8A32691DBC025200BB324C /* MyQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQRCodeController.swift; sourceTree = "<group>"; };
 		3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EC1CCC816F3C7D6067267D4 /* Pods-ResumeQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQTests/Pods-ResumeQTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B37957E883F4FB1E775814 /* Pods-ResumeQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQ/Pods-ResumeQ.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +88,25 @@
 		B81AA8C4A866E0D2268C48DC /* Pods-ResumeQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQ/Pods-ResumeQ.release.xcconfig"; sourceTree = "<group>"; };
 		BD112EC9DE036697DE38A580 /* Pods-ResumeQUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQUITests/Pods-ResumeQUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC034EEE1DBB0D2200B1FA7E /* Resume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		DC1E177D1DBCB2740026FE4E /* xlsximg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xlsximg.png; sourceTree = "<group>"; };
+		DC1E177E1DBCB2740026FE4E /* docximg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = docximg.png; sourceTree = "<group>"; };
+		DC1E177F1DBCB2740026FE4E /* pptimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pptimg.png; sourceTree = "<group>"; };
+		DC1E17801DBCB2740026FE4E /* imgimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgimg.png; sourceTree = "<group>"; };
+		DC1E17811DBCB2740026FE4E /* pdfimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdfimg.png; sourceTree = "<group>"; };
+		DC1E17821DBCB2740026FE4E /* jpgimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jpgimg.png; sourceTree = "<group>"; };
+		DC1E17891DBCB6650026FE4E /* folderimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folderimg.png; sourceTree = "<group>"; };
+		DC1E178B1DBCB8280026FE4E /* movimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movimg.png; sourceTree = "<group>"; };
+		DC1E178D1DBCBABD0026FE4E /* CompaniesNVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesNVC.swift; sourceTree = "<group>"; };
+		DC1E17A11DBCBE440026FE4E /* company.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = company.png; sourceTree = "<group>"; };
+		DC1E17A21DBCBE440026FE4E /* resume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resume.png; sourceTree = "<group>"; };
+		DC1E17A51DBCC0270026FE4E /* gdriveupload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gdriveupload.png; sourceTree = "<group>"; };
+		DC1E17A91DBCC9D40026FE4E /* imgres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgres.png; sourceTree = "<group>"; };
 		DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTLDriveFile+searchableString.swift"; sourceTree = "<group>"; };
+		DC23CA1F1DBC8E45000C8924 /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		DC5B4B621DBCD12C0071349B /* background.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = background.mov; sourceTree = "<group>"; };
+		DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainerVC.swift; sourceTree = "<group>"; };
+		DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-UI-Text"; sourceTree = "<group>"; };
+		DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriveNVC.swift; sourceTree = "<group>"; };
 		DC62F71E1DBAF5320020C4A3 /* ResumeQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
@@ -92,8 +127,9 @@
 		DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = microsoftLogo.jpg; sourceTree = "<group>"; };
 		DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmazonLogo.png; sourceTree = "<group>"; };
 		DC97DEC11DBB8AA60084C74C /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
-		DC97DEC31DBB8B140084C74C /* moreDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreDetailVC.swift; sourceTree = "<group>"; };
+		DC97DEC31DBB8B140084C74C /* MoreDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailVC.swift; sourceTree = "<group>"; };
 		DC97DEC51DBBB89D0084C74C /* tagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tagCell.swift; sourceTree = "<group>"; };
+		DCE765FD1DBC9360005C5720 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		E8314FEC776868F8D53A7185 /* Pods_ResumeQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDC3B4EFB22FF70109CD0D3 /* Pods-ResumeQTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQTests/Pods-ResumeQTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,10 +175,13 @@
 		3E75CED81DBC55A30025B50A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DCE765FD1DBC9360005C5720 /* SplashScreenVC.swift */,
 				3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */,
-				DC97DEC31DBB8B140084C74C /* moreDetailVC.swift */,
+				DC97DEC31DBB8B140084C74C /* MoreDetailVC.swift */,
 				DC62F7251DBAF5320020C4A3 /* CompaniesVC.swift */,
-				3E8A32691DBC025200BB324C /* MyQRCodeController.swift */,
+				DC5CFA421DBCA1B90068A7F4 /* ExplainerVC.swift */,
+				DC5CFA461DBCA6A60068A7F4 /* DriveNVC.swift */,
+				DC1E178D1DBCBABD0026FE4E /* CompaniesNVC.swift */,
 				DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */,
 			);
 			name = Controllers;
@@ -171,6 +210,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC5B4B641DBCD79A0071349B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DC1E17A51DBCC0270026FE4E /* gdriveupload.png */,
+				DC1E17A11DBCBE440026FE4E /* company.png */,
+				DC5B4B621DBCD12C0071349B /* background.mov */,
+				DC1E17A21DBCBE440026FE4E /* resume.png */,
+				DC97DEAE1DBB3C2C0084C74C /* Ping.aiff */,
+				DC97DEB81DBB7BBB0084C74C /* ubisoftLogo.jpg */,
+				DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */,
+				DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */,
+				DC1E177D1DBCB2740026FE4E /* xlsximg.png */,
+				DC1E177E1DBCB2740026FE4E /* docximg.png */,
+				DC1E178B1DBCB8280026FE4E /* movimg.png */,
+				DC1E17A91DBCC9D40026FE4E /* imgres.png */,
+				DC1E177F1DBCB2740026FE4E /* pptimg.png */,
+				DC1E17801DBCB2740026FE4E /* imgimg.png */,
+				DC1E17811DBCB2740026FE4E /* pdfimg.png */,
+				DC1E17891DBCB6650026FE4E /* folderimg.png */,
+				DC1E17821DBCB2740026FE4E /* jpgimg.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		DC62F7151DBAF5310020C4A3 = {
 			isa = PBXGroup;
 			children = (
@@ -196,21 +259,17 @@
 		DC62F7201DBAF5320020C4A3 /* ResumeQ */ = {
 			isa = PBXGroup;
 			children = (
+				DCE765FC1DBC92C7005C5720 /* Other */,
 				3E75CED81DBC55A30025B50A /* Controllers */,
 				3E75CED71DBC559D0025B50A /* Views */,
-				DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */,
-				3E75CED51DBC49140025B50A /* GoogleAuth.swift */,
-				DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */,
-				3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */,
 				DC97DEB01DBB61F40084C74C /* Model */,
 				DC62F7271DBAF5320020C4A3 /* Main.storyboard */,
-				DC62F72A1DBAF5320020C4A3 /* Assets.xcassets */,
 				DC62F72C1DBAF5320020C4A3 /* LaunchScreen.storyboard */,
+				DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */,
+				DC62F72A1DBAF5320020C4A3 /* Assets.xcassets */,
+				3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */,
 				DC62F72F1DBAF5320020C4A3 /* Info.plist */,
-				DC97DEAE1DBB3C2C0084C74C /* Ping.aiff */,
-				DC97DEB81DBB7BBB0084C74C /* ubisoftLogo.jpg */,
-				DC97DEB91DBB7BBB0084C74C /* microsoftLogo.jpg */,
-				DC97DEBA1DBB7BBB0084C74C /* AmazonLogo.png */,
+				DC5B4B641DBCD79A0071349B /* Assets */,
 			);
 			path = ResumeQ;
 			sourceTree = "<group>";
@@ -236,11 +295,22 @@
 		DC97DEB01DBB61F40084C74C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC23CA1F1DBC8E45000C8924 /* MainModel.swift */,
 				3E75CECF1DBC3FCF0025B50A /* GoogleDriveModel.swift */,
 				DC034EEE1DBB0D2200B1FA7E /* Resume.swift */,
 				DC97DEC11DBB8AA60084C74C /* Company.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DCE765FC1DBC92C7005C5720 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */,
+				3E75CED51DBC49140025B50A /* GoogleAuth.swift */,
+				DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,14 +430,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5B4B631DBCD12C0071349B /* background.mov in Resources */,
+				DC1E17AA1DBCC9D40026FE4E /* imgres.png in Resources */,
 				DC97DEBF1DBB7BBB0084C74C /* microsoftLogo.jpg in Resources */,
+				DC1E17A31DBCBE440026FE4E /* company.png in Resources */,
 				3E8A326C1DBC025200BB324C /* GoogleService-Info.plist in Resources */,
+				DC1E17881DBCB2740026FE4E /* jpgimg.png in Resources */,
+				DC1E17A41DBCBE440026FE4E /* resume.png in Resources */,
+				DC1E17851DBCB2740026FE4E /* pptimg.png in Resources */,
+				DC1E178C1DBCB8280026FE4E /* movimg.png in Resources */,
 				DC62F72E1DBAF5320020C4A3 /* LaunchScreen.storyboard in Resources */,
+				DC5CFA451DBCA51A0068A7F4 /* SF-UI-Text in Resources */,
+				DC1E17831DBCB2740026FE4E /* xlsximg.png in Resources */,
+				DC1E17871DBCB2740026FE4E /* pdfimg.png in Resources */,
+				DC1E17841DBCB2740026FE4E /* docximg.png in Resources */,
+				DC1E178A1DBCB6650026FE4E /* folderimg.png in Resources */,
 				DC62F72B1DBAF5320020C4A3 /* Assets.xcassets in Resources */,
 				DC97DEBE1DBB7BBB0084C74C /* ubisoftLogo.jpg in Resources */,
 				DC62F7291DBAF5320020C4A3 /* Main.storyboard in Resources */,
 				DC97DEC01DBB7BBB0084C74C /* AmazonLogo.png in Resources */,
+				DC1E17A61DBCC0270026FE4E /* gdriveupload.png in Resources */,
 				DC97DEAF1DBB3C2C0084C74C /* Ping.aiff in Resources */,
+				DC1E17861DBCB2740026FE4E /* imgimg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +576,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCC6681C15BBA3AABDB5CD6D /* [CP] Check Pods Manifest.lock */ = {
@@ -507,7 +591,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BD7A5FC6787E46FE1B1E32EF /* [CP] Check Pods Manifest.lock */ = {
@@ -522,7 +606,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -535,15 +619,19 @@
 				DC97DEB41DBB79D30084C74C /* companyCell.swift in Sources */,
 				DC034EEF1DBB0D2200B1FA7E /* Resume.swift in Sources */,
 				3E75CED41DBC46520025B50A /* GoogleDriveVC.swift in Sources */,
+				DCE765FE1DBC9360005C5720 /* SplashScreenVC.swift in Sources */,
 				DC23CA1E1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift in Sources */,
+				DC1E178E1DBCBABD0026FE4E /* CompaniesNVC.swift in Sources */,
 				DC62F7261DBAF5320020C4A3 /* CompaniesVC.swift in Sources */,
+				DC5CFA471DBCA6A60068A7F4 /* DriveNVC.swift in Sources */,
 				3E75CED01DBC3FCF0025B50A /* GoogleDriveModel.swift in Sources */,
 				DC62F7221DBAF5320020C4A3 /* AppDelegate.swift in Sources */,
 				DC97DEC61DBBB89D0084C74C /* tagCell.swift in Sources */,
-				DC97DEC41DBB8B140084C74C /* moreDetailVC.swift in Sources */,
+				DC23CA201DBC8E45000C8924 /* MainModel.swift in Sources */,
+				DC97DEC41DBB8B140084C74C /* MoreDetailVC.swift in Sources */,
 				3E75CED21DBC45400025B50A /* driveCell.swift in Sources */,
 				3E75CED61DBC49140025B50A /* GoogleAuth.swift in Sources */,
-				3E8A326B1DBC025200BB324C /* MyQRCodeController.swift in Sources */,
+				DC5CFA431DBCA1B90068A7F4 /* ExplainerVC.swift in Sources */,
 				DC62F7241DBAF5320020C4A3 /* ScannerVC.swift in Sources */,
 				DC97DEC21DBB8AA60084C74C /* Company.swift in Sources */,
 			);
@@ -707,6 +795,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -723,6 +812,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

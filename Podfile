@@ -10,6 +10,7 @@ target 'ResumeQ' do
   pod 'QRCode', :git => 'https://github.com/aschuch/QRCode.git'
   pod 'GoogleAPIClient/Drive', '~> 1.0.2'
   pod 'GTMOAuth2', '~> 1.1.0'
+  pod 'SwiftyJSON'
 
   target 'ResumeQTests' do
     inherit! :search_paths
