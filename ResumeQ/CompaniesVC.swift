@@ -20,6 +20,16 @@ class CompaniesVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+        
+        
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)
+        tableView.refreshControl?.tintColor = UIColor.gray
+        
+        //Company.addCompany(name: "Microsoft", description: "", link: "www.microsoft.com/apply", tags: ["C# Coder", "Andriod","Backend"])
+        
+        Company.getCompanies()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,6 +41,9 @@ class CompaniesVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func loadData() {
+        
+    }
 }
 
 //MARK: Table View Delegate and DataSource Methods
@@ -67,7 +80,7 @@ extension CompaniesVC: UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if  segue.identifier == "moreDetail" {
-            if let destination_VC = segue.destination as? moreDetailVC {
+            if let destination_VC = segue.destination as? MoreDetailVC {
             let testComp = Company()
             testComp.name = "Microsoft"
             testComp.logo = UIImage(named: "microsoftLogo.jpg")

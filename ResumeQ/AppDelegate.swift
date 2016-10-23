@@ -18,7 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let service = GTLServiceDrive()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //Opens to right UI 
+        
+        if let isStudent = UserDefaults.standard.object(forKey: "isStudent") as?  Bool {
+            
+            let mainStorybard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            if isStudent {
+                let initalVC: UITabBarController = mainStorybard.instantiateViewController(withIdentifier: "StudentScreen") as! UITabBarController
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                self.window?.rootViewController = initalVC
+                self.window?.makeKeyAndVisible()
+            } else {
+                let initalVC: UITabBarController = mainStorybard.instantiateViewController(withIdentifier: "CompanyScreen") as! UITabBarController
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                self.window?.rootViewController = initalVC
+                self.window?.makeKeyAndVisible()
+            }
+        }
         
         return true
     }

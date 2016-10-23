@@ -9,10 +9,13 @@
 import Foundation
 import GoogleAPIClient
 import UIKit
+import QRCode
 
 class GoogleDriveVC: UIViewController {
     
     @IBOutlet var tableView: UITableView!
+    
+    @IBOutlet var qrView: UIImageView!
     
     var searchBar = UISearchBar()
     
@@ -28,17 +31,31 @@ class GoogleDriveVC: UIViewController {
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)
         tableView.refreshControl?.tintColor = UIColor.gray
+        //fix bug
+        tableView.contentOffset = (CGPoint(x: 0, y: -50.0))
         tableView.refreshControl?.beginRefreshing()
         loadData()
     }
 
     override func viewWillLayoutSubviews() {
-        searchBar.frame = CGRect(x: 0, y: 30, width: UIScreen.main.bounds.width, height: 40.0)
+        searchBar.frame = CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: 44.0)
         self.view.addSubview(searchBar)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if let resumeString = UserDefaults.standard.object(forKey: "ResumeString") as? String {
+            self.navigationController?.title = "Résumé"
+            // Set QrView
+            let qr = QRCode(resumeString)
+            qrView.image = qr?.image
+            tableView.isHidden = true
+            qrView.isHidden = false
+        }  else {
+            self.navigationController?.title = "Google Drive"
+            tableView.isHidden = false
+            qrView.isHidden = true
+        }
     }
     
     func loadData() {
@@ -97,6 +114,28 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
         //            let data = NSData(contentsOf: url) as? Data {
         //            cell.thumbnailImg.image = UIImage(data: data)
         //        }
+        
+        switch searchedFiles[indexPath.row].mimeType {
+        case "application/pdf":
+                cell.thumbnailImg.image = UIImage(named: "pdfimg.png")
+            case "application/msword", "application/vnd.google-apps.document":
+                  cell.thumbnailImg.image = UIImage(named: "docximg.png")
+            case "application/vnd.ms-excel", "application/vnd.google-apps.spreadsheet":
+                cell.thumbnailImg.image = UIImage(named: "xlsximg.png")
+            case "application/vnd.ms-powerpoint","application/vnd.google-apps.presentation":
+                cell.thumbnailImg.image = UIImage(named: "pptimg.png")
+            case "application/vnd.google-apps.folder":
+                cell.thumbnailImg.image = UIImage(named: "folderimg.png")
+            case "image/jpg", "image/jpeg":
+                cell.thumbnailImg.image = UIImage(named: "jpgimg.png")
+            case "video/quicktime":
+                cell.thumbnailImg.image = UIImage(named: "movimg.png")
+            default:
+            cell.thumbnailImg.image = UIImage(named: "imgimg.png")
+         }
+        
+        print(searchedFiles[indexPath.row].mimeType)
+    
        return cell
     }
     
