@@ -100,25 +100,31 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
         //        }
        return cell
     }
+ 
     
-    func upload(data: Data, file: GTLDriveFile, mime: String, complete: (Void) -> Void) {
+    func upload(data: Data, file: GTLDriveFile, mime: String, complete: (String) -> Void) {
         print("Mime: \(mime)")
-        Alamofire.upload(
-            multipartFormData: { multipartFormData in
-                multipartFormData.append(data, withName: "resume", mimeType: mime)
-            },
-            to: "https://resumeq.herokuapp.com/resume_submit_mobile",
-            encodingCompletion: { encodingResult in
-                switch encodingResult {
-                case .success(let upload, _, _):
-                    upload.response{ response in
-                        print(response)
-                    }
-                case .failure(let encodingError):
-                    print(encodingError)
-                }
-            }
-        )
+    Alamofire.request("https://resumeq.herokuapp.com/resume_submit_json", method: .post, parameters: [:], encoding: data.base64EncodedString(), headers: [:]).responseString {
+            response in
+            print(response.result.value!)
+            complete(response.result.value!)
+        }
+        //        Alamofire.post(
+//            multipartFormData: { multipartFormData in
+//                multipartFormData.append(data, withName: "resume", mimeType: mime)
+//            },
+//            to: "https://resumeq.herokuapp.com/resume_submit_mobile",
+//            encodingCompletion: { encodingResult in
+//                switch encodingResult {
+//                case .success(let upload, _, _):
+//                    upload.response{ response in
+//                        print(response)
+//                    }
+//                case .failure(let encodingError):
+//                    print(encodingError)
+//                }
+//            }
+//        )
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -134,7 +140,8 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
                     print("\(data)")
                     // Upload the data in a blob
                     self.upload(data: data, file: file, mime: mime, complete: {
-                        let resumeId = "aksbdkajsbdkabjsa"
+                        id in
+                        let resumeId = id
                         UserDefaults.standard.set(resumeId, forKey: "ResumeString")
                         UserDefaults.standard.synchronize()
                     })
@@ -142,6 +149,16 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
             }
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+}
+
+extension String: ParameterEncoding {
+    
+    public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
+        var request = try urlRequest.asURLRequest()
+        request.httpBody = data(using: .utf8, allowLossyConversion: false)
+        return request
     }
     
 }

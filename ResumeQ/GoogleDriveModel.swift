@@ -20,7 +20,6 @@ class GoogleDriveModel: NSObject {
     private let driveQuery = "nextPageToken, files(id, name, mimeType, webContentLink)"
     
     private let exportMimes = [
-        "application/pdf",
         "application/vnd.google-apps.document"
     ]
     
