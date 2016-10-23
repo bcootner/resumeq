@@ -17,7 +17,12 @@ class GoogleDriveModel: NSObject {
     let onComplete: ([GTLDriveFile]) -> Void
     let service: GTLServiceDrive
     let onPage: ([GTLDriveFile]) -> Void
-    private let driveQuery = "nextPageToken, files(id, name, mimeType, thumbnailLink)"
+    private let driveQuery = "nextPageToken, files(id, name, mimeType, webContentLink)"
+    
+    private let exportMimes = [
+        "application/pdf",
+        "application/vnd.google-apps.document"
+    ]
     
     init(service: GTLServiceDrive, complete: @escaping ([GTLDriveFile]) -> Void, onPage: @escaping ([GTLDriveFile]) -> Void) {
         self.service = service
@@ -37,16 +42,43 @@ class GoogleDriveModel: NSObject {
         )
     }
     
-    func getFileContents() {
-        
+    func getFileContents(file: GTLDriveFile, completion: @escaping (Data, String) -> Void) {
+        let id = file.identifier.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        print(id)
+        print(file.mimeType)
+        var url: String = ""
+        var mime: String = ""
+        if exportMimes.contains(file.mimeType) {
+            mime = "application/pdf"
+            url = "https://www.googleapis.com/drive/v3/files/\(id!)/export?alt=media&mimeType=application/pdf"
+        } else {
+            mime = file.mimeType!
+            url = "https://www.googleapis.com/drive/v3/files/\(id!)?alt=media"
+        }
+        if let realURL = URL(string: url) {
+            let fetcher = service.fetcherService.fetcher(with: realURL)
+            fetcher.beginFetch(completionHandler: {
+                data, error in
+                if (error == nil) {
+                    print("Success! \(data)")
+                    completion(data!, mime)
+                } else {
+                    print("error\(error!)")
+                }
+            })
+        } else {
+            print("Could not make url: \(url)")
+        }
     }
     
     @objc func fetch(ticket: GTLServiceTicket,
                      fileList: GTLDriveFileList,
                      error: Error) {
         self.onPage(fileList.files as! [GTLDriveFile])
-        for file in fileList.files as! [GTLDriveFile] {
-            files.append(file)
+        if (fileList.files != nil) {
+            for file in fileList.files as! [GTLDriveFile] {
+                files.append(file)
+            }
         }
         if let nextToken = fileList.nextPageToken {
             let query = GTLQueryDrive.queryForFilesList()!

@@ -17,9 +17,9 @@ class GoogleAuth: NSObject {
     
     private let kKeychainItemName = "Drive API"
     private let kClientID = "1087563397670-pbiom5cltnfaeui9qbq8l43a8s6botl3.apps.googleusercontent.com"
-    private let scopes = [kGTLAuthScopeDriveMetadataReadonly]
+    private let scopes = [kGTLAuthScopeDrive]
     
-    private let service = GTLServiceDrive()
+    let service = GTLServiceDrive()
     private var completion: ((Void) -> Void)? = nil
     
     override init() {

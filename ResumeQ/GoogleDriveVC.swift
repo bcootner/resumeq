@@ -21,6 +21,7 @@ class GoogleDriveVC: UIViewController {
     
     var files: [GTLDriveFile] = []
     var searchedFiles: [GTLDriveFile] = []
+    var googleModel: GoogleDriveModel? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +59,7 @@ class GoogleDriveVC: UIViewController {
         }
     }
     
-    func loadData() {
+    @objc func loadData() {
         
         func onPage(files: [GTLDriveFile]) {
             if self.files.isEmpty {
@@ -84,8 +85,8 @@ class GoogleDriveVC: UIViewController {
         }
         
         GoogleAuth.shared.signin(vc: self, completion: {
-            let model = GoogleAuth.shared.getDriveModel(onComplete: onComplete, onPage: onPage)
-            model.load()
+            self.googleModel = GoogleAuth.shared.getDriveModel(onComplete: onComplete, onPage: onPage)
+            self.googleModel!.load()
         })
     }
     
@@ -107,7 +108,6 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "drivecell", for: indexPath) as! DriveCell
         cell.filenameLabel.text = searchedFiles[indexPath.row].name
-        
         //Thumbnail not working -- Thanks Google!
         //        let url = NSURL(string: files[indexPath.row].thumbnailLink )
         //        if let url = url as? URL,
@@ -139,17 +139,45 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
        return cell
     }
     
+    func upload(data: Data, file: GTLDriveFile, mime: String, complete: (Void) -> Void) {
+        print("Mime: \(mime)")
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(data, withName: "resume", mimeType: mime)
+            },
+            to: "https://resumeq.herokuapp.com/resume_submit_mobile",
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.response{ response in
+                        print(response)
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
+                }
+            }
+        )
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let alert = UIAlertController(title: "Upload \(searchedFiles[indexPath.row].name ?? "")?", message: "Are you sure you want to upload this file?", preferredStyle: .alert)
+        let file = searchedFiles[indexPath.row]
+        let alert = UIAlertController(title: "Upload \(file.name ?? "")?", message: "Are you sure you want to upload this file?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
             //Upload file to server, generate id and create QR code
-            let resumeId = "a"
-            
-            UserDefaults.standard.set(resumeId, forKey: "ResumeString")
-            UserDefaults.standard.synchronize()
-            
+            if let model = self.googleModel {
+                model.getFileContents(file: file, completion: {
+                    data, mime in
+                    print("\(data)")
+                    // Upload the data in a blob
+                    self.upload(data: data, file: file, mime: mime, complete: {
+                        let resumeId = "aksbdkajsbdkabjsa"
+                        UserDefaults.standard.set(resumeId, forKey: "ResumeString")
+                        UserDefaults.standard.synchronize()
+                    })
+                })
+            }
         }))
         self.present(alert, animated: true, completion: nil)
     }
@@ -160,7 +188,6 @@ extension GoogleDriveVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchBar.resignFirstResponder()
     }
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchedFiles.removeAll()
         let searchText = searchBar.text?.uppercased()
