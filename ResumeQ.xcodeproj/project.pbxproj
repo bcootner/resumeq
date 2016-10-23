@@ -19,6 +19,7 @@
 		CAC085B73E986A5F6BE92876 /* Pods_ResumeQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */; };
 		D1F997FDEA1139DE98AD4519 /* Pods_ResumeQUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */; };
 		DC034EEF1DBB0D2200B1FA7E /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC034EEE1DBB0D2200B1FA7E /* Resume.swift */; };
+		DC23CA1E1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */; };
 		DC62F7221DBAF5320020C4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */; };
 		DC62F7241DBAF5320020C4A3 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */; };
 		DC62F7261DBAF5320020C4A3 /* CompaniesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62F7251DBAF5320020C4A3 /* CompaniesVC.swift */; };
@@ -71,6 +72,7 @@
 		B81AA8C4A866E0D2268C48DC /* Pods-ResumeQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQ/Pods-ResumeQ.release.xcconfig"; sourceTree = "<group>"; };
 		BD112EC9DE036697DE38A580 /* Pods-ResumeQUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQUITests/Pods-ResumeQUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC034EEE1DBB0D2200B1FA7E /* Resume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTLDriveFile+searchableString.swift"; sourceTree = "<group>"; };
 		DC62F71E1DBAF5320020C4A3 /* ResumeQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */,
 				3E75CED51DBC49140025B50A /* GoogleAuth.swift */,
 				3E8A32681DBC025200BB324C /* ResumeQ-Bridging-Header.h */,
+				DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */,
 				3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */,
 				DC97DEB01DBB61F40084C74C /* Model */,
 				DC62F7271DBAF5320020C4A3 /* Main.storyboard */,
@@ -534,6 +537,7 @@
 				DC97DEB41DBB79D30084C74C /* companyCell.swift in Sources */,
 				DC034EEF1DBB0D2200B1FA7E /* Resume.swift in Sources */,
 				3E75CED41DBC46520025B50A /* GoogleDriveVC.swift in Sources */,
+				DC23CA1E1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift in Sources */,
 				DC62F7261DBAF5320020C4A3 /* CompaniesVC.swift in Sources */,
 				3E75CED01DBC3FCF0025B50A /* GoogleDriveModel.swift in Sources */,
 				DC62F7221DBAF5320020C4A3 /* AppDelegate.swift in Sources */,

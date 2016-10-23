@@ -72,7 +72,7 @@ class GoogleAuth: NSObject {
             return
         }
         service.authorizer = authResult
-        vc.dismiss(animated: true, completion: nil)
+        vc.dismiss(animated: true, completion: self.completion)
     }
     
     // Helper for showing an alert
@@ -88,7 +88,7 @@ class GoogleAuth: NSObject {
             handler: nil
         )
         alert.addAction(ok)
-        vc.present(alert, animated: true, completion: self.completion)
+        vc.present(alert, animated: true, completion: nil)
     }
     
     

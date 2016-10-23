@@ -26,7 +26,7 @@ class Resume {
                 let fileURL = documentsURL.appendingPathComponent("resume1.pdf")
                 return (fileURL, .removePreviousFile)
             }
-            Alamofire.download("https://resumeq.herokuapp.com/resume/" + id + ".pdf", to: destination).response { response in
+            Alamofire.download("https://resumeq.herokuapp.com/resume/" + id, to: destination).response { response in
                 print(response.temporaryURL)
                 print(response.destinationURL)
                 completion(true,response.destinationURL)

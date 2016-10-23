@@ -11,4 +11,6 @@ import UIKit
 class DriveCell: UITableViewCell {
     
     @IBOutlet var filenameLabel: UILabel!
+
+    @IBOutlet var thumbnailImg: UIImageView!
 }

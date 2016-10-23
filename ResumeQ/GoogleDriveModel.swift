@@ -17,7 +17,7 @@ class GoogleDriveModel: NSObject {
     let onComplete: ([GTLDriveFile]) -> Void
     let service: GTLServiceDrive
     let onPage: ([GTLDriveFile]) -> Void
-    private let driveQuery = "nextPageToken, files(id, name, mimeType)"
+    private let driveQuery = "nextPageToken, files(id, name, mimeType, thumbnailLink)"
     
     init(service: GTLServiceDrive, complete: @escaping ([GTLDriveFile]) -> Void, onPage: @escaping ([GTLDriveFile]) -> Void) {
         self.service = service
