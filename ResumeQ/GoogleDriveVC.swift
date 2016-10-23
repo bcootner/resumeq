@@ -10,6 +10,7 @@ import Foundation
 import GoogleAPIClient
 import UIKit
 import QRCode
+import Alamofire
 
 class GoogleDriveVC: UIViewController {
     
