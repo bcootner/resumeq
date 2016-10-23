@@ -63,7 +63,6 @@
 		3E75CED11DBC45400025B50A /* driveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = driveCell.swift; sourceTree = "<group>"; };
 		3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveVC.swift; sourceTree = "<group>"; };
 		3E75CED51DBC49140025B50A /* GoogleAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
-		3E8A32681DBC025200BB324C /* ResumeQ-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ResumeQ-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E8A32691DBC025200BB324C /* MyQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQRCodeController.swift; sourceTree = "<group>"; };
 		3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EC1CCC816F3C7D6067267D4 /* Pods-ResumeQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQTests/Pods-ResumeQTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +200,6 @@
 				3E75CED71DBC559D0025B50A /* Views */,
 				DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */,
 				3E75CED51DBC49140025B50A /* GoogleAuth.swift */,
-				3E8A32681DBC025200BB324C /* ResumeQ-Bridging-Header.h */,
 				DC23CA1D1DBC73DF000C8924 /* GTLDriveFile+searchableString.swift */,
 				3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */,
 				DC97DEB01DBB61F40084C74C /* Model */,
@@ -709,7 +707,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ResumeQ-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -726,7 +723,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ResumeQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ResumeQ-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

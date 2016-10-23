@@ -17,7 +17,7 @@ class GoogleDriveModel: NSObject {
     let onComplete: ([GTLDriveFile]) -> Void
     let service: GTLServiceDrive
     let onPage: ([GTLDriveFile]) -> Void
-    private let driveQuery = "nextPageToken, files(id, name, mimeType, thumbnailLink)"
+    private let driveQuery = "nextPageToken, files(id, name, mimeType, webContentLink)"
     
     init(service: GTLServiceDrive, complete: @escaping ([GTLDriveFile]) -> Void, onPage: @escaping ([GTLDriveFile]) -> Void) {
         self.service = service
@@ -38,14 +38,16 @@ class GoogleDriveModel: NSObject {
     }
     
     func getFileContents(file: GTLDriveFile, completion: @escaping (Data) -> Void) {
-        let url = "https://www.googleapis.com/drive/v3/files/\(file.identifier)?alt=media"
-        let fetcher = service.fetcherService.fetcher(withURLString: url)
+        let id = file.identifier.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        print(id)
+        let url = file.webContentLink ?? "https://www.googleapis.com/drive/v2/files/\(id!)?alt=media"
+        let fetcher = service.fetcherService.fetcher(with: URL(string: url)!)
         fetcher.beginFetch(completionHandler: {
             data, error in
             if (error == nil) {
                 completion(data!)
             } else {
-                print("error\(error)")
+                print("error\(error!)")
             }
         })
     }
@@ -54,8 +56,10 @@ class GoogleDriveModel: NSObject {
                      fileList: GTLDriveFileList,
                      error: Error) {
         self.onPage(fileList.files as! [GTLDriveFile])
-        for file in fileList.files as! [GTLDriveFile] {
-            files.append(file)
+        if (fileList.files != nil) {
+            for file in fileList.files as! [GTLDriveFile] {
+                files.append(file)
+            }
         }
         if let nextToken = fileList.nextPageToken {
             let query = GTLQueryDrive.queryForFilesList()!

@@ -43,7 +43,7 @@ class GoogleDriveVC: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    func loadData() {
+    @objc func loadData() {
         
         func onPage(files: [GTLDriveFile]) {
             if self.files.isEmpty {
@@ -132,8 +132,7 @@ extension GoogleDriveVC: UITableViewDelegate, UITableViewDataSource {
                     data in
                     // Upload the data in a blob
                     print("\(data)")
-                    let resumeId = "a"
-                    
+                    let resumeId = "aksbdkajsbdkabjsa"
                     UserDefaults.standard.set(resumeId, forKey: "ResumeString")
                     UserDefaults.standard.synchronize()
                 })
@@ -148,7 +147,6 @@ extension GoogleDriveVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchBar.resignFirstResponder()
     }
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchedFiles.removeAll()
         let searchText = searchBar.text?.uppercased()
