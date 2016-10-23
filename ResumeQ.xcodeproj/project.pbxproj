@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E073A321DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
 		3E073A331DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
 		3E073A341DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
-		3E073A381DBBFC0700FC17FC /* GoogleSigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E073A371DBBFC0700FC17FC /* GoogleSigninVC.swift */; };
+		3E75CED01DBC3FCF0025B50A /* GoogleDriveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CECF1DBC3FCF0025B50A /* GoogleDriveModel.swift */; };
+		3E75CED21DBC45400025B50A /* driveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED11DBC45400025B50A /* driveCell.swift */; };
+		3E75CED41DBC46520025B50A /* GoogleDriveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */; };
+		3E75CED61DBC49140025B50A /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED51DBC49140025B50A /* GoogleAuth.swift */; };
+		3E8A326B1DBC025200BB324C /* MyQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A32691DBC025200BB324C /* MyQRCodeController.swift */; };
+		3E8A326C1DBC025200BB324C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */; };
 		7F0FCFF4AF56B103EC459AD2 /* Pods_ResumeQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8314FEC776868F8D53A7185 /* Pods_ResumeQTests.framework */; };
 		CAC085B73E986A5F6BE92876 /* Pods_ResumeQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */; };
 		D1F997FDEA1139DE98AD4519 /* Pods_ResumeQUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */; };
@@ -54,8 +58,13 @@
 		025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3E073A361DBBF6E900FC17FC /* ResumeQ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ResumeQ-Bridging-Header.h"; sourceTree = "<group>"; };
-		3E073A371DBBFC0700FC17FC /* GoogleSigninVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSigninVC.swift; sourceTree = "<group>"; };
+		3E75CECF1DBC3FCF0025B50A /* GoogleDriveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveModel.swift; sourceTree = "<group>"; };
+		3E75CED11DBC45400025B50A /* driveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = driveCell.swift; sourceTree = "<group>"; };
+		3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveVC.swift; sourceTree = "<group>"; };
+		3E75CED51DBC49140025B50A /* GoogleAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		3E8A32681DBC025200BB324C /* ResumeQ-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ResumeQ-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E8A32691DBC025200BB324C /* MyQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQRCodeController.swift; sourceTree = "<group>"; };
+		3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EC1CCC816F3C7D6067267D4 /* Pods-ResumeQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQTests/Pods-ResumeQTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B37957E883F4FB1E775814 /* Pods-ResumeQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQ/Pods-ResumeQ.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BFC3A2DD5B2F00F2BCEE29 /* Pods-ResumeQUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResumeQUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResumeQUITests/Pods-ResumeQUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +125,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E75CED71DBC559D0025B50A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC97DEC51DBBB89D0084C74C /* tagCell.swift */,
+				3E75CED11DBC45400025B50A /* driveCell.swift */,
+				DC97DEB31DBB79D30084C74C /* companyCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3E75CED81DBC55A30025B50A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */,
+				DC97DEC31DBB8B140084C74C /* moreDetailVC.swift */,
+				DC62F7251DBAF5320020C4A3 /* CompaniesVC.swift */,
+				3E8A32691DBC025200BB324C /* MyQRCodeController.swift */,
+				DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		77463CDF53CE9823CE50F195 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,13 +195,13 @@
 		DC62F7201DBAF5320020C4A3 /* ResumeQ */ = {
 			isa = PBXGroup;
 			children = (
+				3E75CED81DBC55A30025B50A /* Controllers */,
+				3E75CED71DBC559D0025B50A /* Views */,
 				DC62F7211DBAF5320020C4A3 /* AppDelegate.swift */,
+				3E75CED51DBC49140025B50A /* GoogleAuth.swift */,
+				3E8A32681DBC025200BB324C /* ResumeQ-Bridging-Header.h */,
+				3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */,
 				DC97DEB01DBB61F40084C74C /* Model */,
-				DC62F7231DBAF5320020C4A3 /* ScannerVC.swift */,
-				DC62F7251DBAF5320020C4A3 /* CompaniesVC.swift */,
-				DC97DEC31DBB8B140084C74C /* moreDetailVC.swift */,
-				DC97DEC51DBBB89D0084C74C /* tagCell.swift */,
-				DC97DEB31DBB79D30084C74C /* companyCell.swift */,
 				DC62F7271DBAF5320020C4A3 /* Main.storyboard */,
 				DC62F72A1DBAF5320020C4A3 /* Assets.xcassets */,
 				DC62F72C1DBAF5320020C4A3 /* LaunchScreen.storyboard */,
@@ -204,6 +235,7 @@
 		DC97DEB01DBB61F40084C74C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3E75CECF1DBC3FCF0025B50A /* GoogleDriveModel.swift */,
 				DC034EEE1DBB0D2200B1FA7E /* Resume.swift */,
 				DC97DEC11DBB8AA60084C74C /* Company.swift */,
 			);
@@ -328,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC97DEBF1DBB7BBB0084C74C /* microsoftLogo.jpg in Resources */,
+				3E8A326C1DBC025200BB324C /* GoogleService-Info.plist in Resources */,
 				DC62F72E1DBAF5320020C4A3 /* LaunchScreen.storyboard in Resources */,
 				DC62F72B1DBAF5320020C4A3 /* Assets.xcassets in Resources */,
 				DC97DEBE1DBB7BBB0084C74C /* ubisoftLogo.jpg in Resources */,
@@ -500,10 +533,15 @@
 			files = (
 				DC97DEB41DBB79D30084C74C /* companyCell.swift in Sources */,
 				DC034EEF1DBB0D2200B1FA7E /* Resume.swift in Sources */,
+				3E75CED41DBC46520025B50A /* GoogleDriveVC.swift in Sources */,
 				DC62F7261DBAF5320020C4A3 /* CompaniesVC.swift in Sources */,
+				3E75CED01DBC3FCF0025B50A /* GoogleDriveModel.swift in Sources */,
 				DC62F7221DBAF5320020C4A3 /* AppDelegate.swift in Sources */,
 				DC97DEC61DBBB89D0084C74C /* tagCell.swift in Sources */,
 				DC97DEC41DBB8B140084C74C /* moreDetailVC.swift in Sources */,
+				3E75CED21DBC45400025B50A /* driveCell.swift in Sources */,
+				3E75CED61DBC49140025B50A /* GoogleAuth.swift in Sources */,
+				3E8A326B1DBC025200BB324C /* MyQRCodeController.swift in Sources */,
 				DC62F7241DBAF5320020C4A3 /* ScannerVC.swift in Sources */,
 				DC97DEC21DBB8AA60084C74C /* Company.swift in Sources */,
 			);

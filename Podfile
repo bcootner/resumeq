@@ -6,7 +6,10 @@ target 'ResumeQ' do
 
   # Pods for ResumeQ
   pod 'Alamofire'
-  pod 'Google/SignIn'
+  pod 'HSGoogleDrivePicker', '~> 1.0’
+  pod 'QRCode', :git => 'https://github.com/aschuch/QRCode.git'
+  pod 'GoogleAPIClient/Drive', '~> 1.0.2'
+  pod 'GTMOAuth2', '~> 1.1.0'
 
   target 'ResumeQTests' do
     inherit! :search_paths

@@ -1,0 +1,6 @@
+framework module HSGoogleDrivePicker {
+  umbrella header "HSGoogleDrivePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
