@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E073A331DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
 		3E073A341DBBF51F00FC17FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */; };
+		3E2B9FAA1DBCE23E0054ACDB /* resumeq.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2B9FA91DBCE23E0054ACDB /* resumeq.png */; };
 		3E75CED01DBC3FCF0025B50A /* GoogleDriveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CECF1DBC3FCF0025B50A /* GoogleDriveModel.swift */; };
 		3E75CED21DBC45400025B50A /* driveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED11DBC45400025B50A /* driveCell.swift */; };
 		3E75CED41DBC46520025B50A /* GoogleDriveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */; };
@@ -77,6 +78,7 @@
 		025A0C02D000B84242ADDCDC /* Pods_ResumeQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D49C298F35A338902DB7DD /* Pods_ResumeQUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResumeQUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E073A311DBBF51F00FC17FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E2B9FA91DBCE23E0054ACDB /* resumeq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resumeq.png; sourceTree = "<group>"; };
 		3E75CECF1DBC3FCF0025B50A /* GoogleDriveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveModel.swift; sourceTree = "<group>"; };
 		3E75CED11DBC45400025B50A /* driveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = driveCell.swift; sourceTree = "<group>"; };
 		3E75CED31DBC46520025B50A /* GoogleDriveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveVC.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				DC62F72C1DBAF5320020C4A3 /* LaunchScreen.storyboard */,
 				DC5CFA441DBCA51A0068A7F4 /* SF-UI-Text */,
 				DC62F72A1DBAF5320020C4A3 /* Assets.xcassets */,
+				3E2B9FA91DBCE23E0054ACDB /* resumeq.png */,
 				3E8A326A1DBC025200BB324C /* GoogleService-Info.plist */,
 				DC62F72F1DBAF5320020C4A3 /* Info.plist */,
 				DC5B4B641DBCD79A0071349B /* Assets */,
@@ -434,6 +437,7 @@
 				DC1E17AA1DBCC9D40026FE4E /* imgres.png in Resources */,
 				DC97DEBF1DBB7BBB0084C74C /* microsoftLogo.jpg in Resources */,
 				DC1E17A31DBCBE440026FE4E /* company.png in Resources */,
+				3E2B9FAA1DBCE23E0054ACDB /* resumeq.png in Resources */,
 				3E8A326C1DBC025200BB324C /* GoogleService-Info.plist in Resources */,
 				DC1E17881DBCB2740026FE4E /* jpgimg.png in Resources */,
 				DC1E17A41DBCBE440026FE4E /* resume.png in Resources */,
